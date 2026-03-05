@@ -1,0 +1,43 @@
+##fileformat=VCFv4.2
+##fileDate=20260302
+##source=PatientWGS_ClinicalGenomicsLab_v1.0
+##reference=GRCh38/hg38
+##assembly=https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39
+##contig=<ID=chr4,length=190214555,assembly=GRCh38>
+##contig=<ID=chr7,length=159345973,assembly=GRCh38>
+##contig=<ID=chr11,length=135086622,assembly=GRCh38>
+##FILTER=<ID=PASS,Description="All filters passed – variant is high quality">
+##FILTER=<ID=LowQual,Description="Low quality variant; QUAL < 20 or GQ < 20">
+##FILTER=<ID=LowDepth,Description="Insufficient read depth; DP < 10">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth at locus">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele frequency in sample">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS mapping quality">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test">
+##INFO=<ID=Gene,Number=1,Type=String,Description="HGNC gene symbol">
+##INFO=<ID=HGVS_c,Number=1,Type=String,Description="HGVS coding DNA notation">
+##INFO=<ID=HGVS_p,Number=1,Type=String,Description="HGVS protein notation">
+##INFO=<ID=ClinSig,Number=1,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=ClinVar_ID,Number=1,Type=String,Description="ClinVar Variation ID">
+##INFO=<ID=OMIM,Number=1,Type=String,Description="OMIM phenotype MIM number">
+##INFO=<ID=Disease,Number=1,Type=String,Description="Associated disease name">
+##INFO=<ID=Inheritance,Number=1,Type=String,Description="Mode of inheritance">
+##INFO=<ID=dbSNP,Number=1,Type=String,Description="dbSNP rsID">
+##INFO=<ID=REVEL,Number=1,Type=Float,Description="REVEL pathogenicity score (0-1)">
+##INFO=<ID=AlphaMissense,Number=1,Type=Float,Description="AlphaMissense score (0-1); NA for non-missense">
+##INFO=<ID=CADD_Phred,Number=1,Type=Float,Description="CADD Phred-scaled deleteriousness score">
+##INFO=<ID=VarType,Number=1,Type=String,Description="Variant type">
+##INFO=<ID=ACMGclass,Number=1,Type=String,Description="ACMG/AMP 2015 classification">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype (0=ref, 1=alt)">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth at this position">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality (Phred-scaled)">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for REF,ALT alleles">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled genotype likelihoods">
+##ClinVarAnnotation=Submitted for ClinVar annotation via batch submission API
+##AnalysisPipeline=GATK4-HaplotypeCaller + DeepVariant; annotated with Ensembl VEP 110 + ClinVar 2024-01
+##SampleID=PATIENT_001
+##SampleInfo=<ID=PATIENT_001,Sex=Male,Age=28,Ethnicity=Mixed,ClinicalIndication=Suspected_Haemoglobinopathy_CF_Screen>
+##ClinVarSubmissionNote=File prepared for ClinVar variant annotation service (https://www.ncbi.nlm.nih.gov/clinvar/docs/submit/)
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT_001
+chr7	117559593	rs113993960	ATCT	A	5000	PASS	DP=120;AF=0.502;MQ=60.0;Gene=CFTR;HGVS_c=NM_000492.4:c.1521_1523del;HGVS_p=p.Phe508del;ClinSig=Pathogenic;ClinVar_ID=7105;OMIM=219700;Disease=Cystic_Fibrosis;Inheritance=Autosomal_Recessive;dbSNP=rs113993960;CADD_Phred=35.0;AlphaMissense=NA;REVEL=NA;VarType=inframe_deletion;ACMGclass=Pathogenic	GT:DP:GQ:AD:PL	0/1:120:99:60,60:1800,0,1800
+chr11	5227002	rs334	A	T	5000	PASS	DP=145;AF=0.503;MQ=60.0;Gene=HBB;HGVS_c=NM_000518.5:c.20A>T;HGVS_p=p.Glu6Val;ClinSig=Pathogenic;ClinVar_ID=15126;OMIM=603903;Disease=Sickle_Cell_Disease;Inheritance=Autosomal_Recessive;dbSNP=rs334;CADD_Phred=24.0;AlphaMissense=0.9941;REVEL=0.932;VarType=missense_variant;ACMGclass=Pathogenic	GT:DP:GQ:AD:PL	1/1:145:99:0,145:5000,400,0
+chr4	3074877	rs193922872	CAG	CAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAG	1000	PASS	DP=80;AF=0.500;MQ=55.0;Gene=HTT;HGVS_c=NM_002111.8:c.52_54(CAGn)_exp;HGVS_p=p.Gln(42)_expansion;ClinSig=Pathogenic;ClinVar_ID=9496;OMIM=143100;Disease=Huntington_Disease;Inheritance=Autosomal_Dominant;dbSNP=rs193922872;CADD_Phred=NA;AlphaMissense=NA;REVEL=NA;VarType=trinucleotide_repeat_expansion;ACMGclass=Pathogenic;RepeatUnit=CAG;RepeatCount=42;PathogenicThreshold=40	GT:DP:GQ:AD:PL	0/1:80:85:40,40:1000,0,1000
