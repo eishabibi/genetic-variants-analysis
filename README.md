@@ -43,9 +43,9 @@ This project performs a clinical genomic analysis of three well-characterised ge
 
 | # | Disease | Gene | Variant | ClinVar ID | Significance |
 |---|---------|------|---------|------------|--------------|
-| 1 | Cystic Fibrosis | CFTR | p.Phe508del (c.1521_1523del) | [7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/) | Pathogenic ⭐⭐⭐⭐⭐ |
-| 2 | Sickle Cell Disease | HBB | p.Glu6Val (c.20A>T) | [15126](https://www.ncbi.nlm.nih.gov/clinvar/variation/15126/) | Pathogenic ⭐⭐⭐⭐⭐ |
-| 3 | Huntington Disease | HTT | CAG repeat expansion (≥40 repeats) | [9496](https://www.ncbi.nlm.nih.gov/clinvar/variation/9496/) | Pathogenic ⭐⭐⭐ |
+| 1 | Cystic Fibrosis | CFTR | p.Phe508del (c.1521_1523del) | [7105](https://www.ncbi.nlm.nih.gov/clinvar/variation/7105/) | Pathogenic  |
+| 2 | Sickle Cell Disease | HBB | p.Glu6Val (c.20A>T) | [15126](https://www.ncbi.nlm.nih.gov/clinvar/variation/15126/) | Pathogenic  |
+| 3 | Huntington Disease | HTT | CAG repeat expansion (≥40 repeats) | [9496](https://www.ncbi.nlm.nih.gov/clinvar/variation/9496/) | Pathogenic  |
 
 ---
 
@@ -68,11 +68,7 @@ genetic-variants-analysis/
     └── key_papers.md                ← Annotated bibliography
 ```
 
----
 
-## Step-by-Step Reproduction Guide
-
-> 💡 **Beginner tip:** Follow these steps in order. Each step builds on the previous one. Take your time — there is no rush!
 
 ---
 
@@ -251,7 +247,7 @@ chr7  117559593  rs113993960  ATCT  A  5000  PASS  Gene=CFTR;...  GT:DP  0/1:120
 
 ### Step 6: Submit VCF to ClinVar for Annotation
 
-> ⚠️ **Important for beginners:** ClinVar has two services that sound similar but are different:
+>  **Important for beginners:** ClinVar has two services that sound similar but are different:
 > - **Submitting variants** = telling ClinVar about new data from your lab (requires account + institutional affiliation)
 > - **Annotating variants** = asking ClinVar to add clinical information to your existing VCF file
 
